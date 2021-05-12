@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25B767F5-25C0-4A6C-A773-3FB81A705A84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>crimeproject</RootNamespace>
+    <AssemblyName>crimeproject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contactus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contactus.Designer.cs">
+      <DependentUpon>contactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crimeprojectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crimeprojectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crimeprojectDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crimeprojectDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crimeprojectDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crimeprojectDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crimeprojectDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crimeprojectDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crimeprojectDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crimeprojectDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crimeprojectDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crimeprojectDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crimeprojectDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crimeprojectDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="criminals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="criminals.Designer.cs">
+      <DependentUpon>criminals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="criminalview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="criminalview.Designer.cs">
+      <DependentUpon>criminalview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fir.Designer.cs">
+      <DependentUpon>fir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firview.Designer.cs">
+      <DependentUpon>firview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firstpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firstpage.Designer.cs">
+      <DependentUpon>Firstpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.cs">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="polices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="polices.Designer.cs">
+      <DependentUpon>polices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="policeview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="policeview.Designer.cs">
+      <DependentUpon>policeview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stations.Designer.cs">
+      <DependentUpon>stations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stationview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stationview.Designer.cs">
+      <DependentUpon>stationview.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="contactus.resx">
+      <DependentUpon>contactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="criminals.resx">
+      <DependentUpon>criminals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="criminalview.resx">
+      <DependentUpon>criminalview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fir.resx">
+      <DependentUpon>fir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firview.resx">
+      <DependentUpon>firview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firstpage.resx">
+      <DependentUpon>Firstpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="polices.resx">
+      <DependentUpon>polices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="policeview.resx">
+      <DependentUpon>policeview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="stations.resx">
+      <DependentUpon>stations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stationview.resx">
+      <DependentUpon>stationview.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="crimeprojectDataSet.xsc">
+      <DependentUpon>crimeprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>crimeprojectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="crimeprojectDataSet.xss">
+      <DependentUpon>crimeprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet1.xsc">
+      <DependentUpon>crimeprojectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>crimeprojectDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="crimeprojectDataSet1.xss">
+      <DependentUpon>crimeprojectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet2.xsc">
+      <DependentUpon>crimeprojectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>crimeprojectDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="crimeprojectDataSet2.xss">
+      <DependentUpon>crimeprojectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet3.xsc">
+      <DependentUpon>crimeprojectDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>crimeprojectDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="crimeprojectDataSet3.xss">
+      <DependentUpon>crimeprojectDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet4.xsc">
+      <DependentUpon>crimeprojectDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>crimeprojectDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="crimeprojectDataSet4.xss">
+      <DependentUpon>crimeprojectDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet5.xsc">
+      <DependentUpon>crimeprojectDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>crimeprojectDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="crimeprojectDataSet5.xss">
+      <DependentUpon>crimeprojectDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet6.xsc">
+      <DependentUpon>crimeprojectDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="crimeprojectDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>crimeprojectDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="crimeprojectDataSet6.xss">
+      <DependentUpon>crimeprojectDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="crimeproject.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="crimeproject_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>crimeproject.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
